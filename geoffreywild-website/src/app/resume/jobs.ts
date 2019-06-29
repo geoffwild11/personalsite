@@ -52,5 +52,23 @@ export const JOBS: IJobInfo[] = [
       'Redesigned all learning spaces computers/zero clients to automatically login to speed up access to computing resources',
       'Configured computer science development environment (Visual Studio 2008/2010) for use in learning spaces'
     ]
+  },
+  {
+    dateStart: new Date(2010, 5),
+    dateEnd: new Date(2012, 8),
+    employer: 'St. Norbert College',
+    location: 'De Pere, WI',
+    position: 'Microcomputer Support Specialist (Technology Support Services)',
+    responsibilities: [
+      'Solved campus computing issues for labs, classrooms, staff, and faculty',
+      'Developed, implemented, and maintained imaging system for Windows 7 migration',
+      'Led a team migrating a majority of campus owned machines to Active Directory',
+      'Led a desktop virtualization project with Citrix XenApp 6.0',
+      'Presented virtualization project progress to the Wisconsin Association of Independent Colleges and Universities (WAICU) board',
+      'Implemented Citrix XenApp for use with campus enterprise management system',
+      'Responsible for imaging of lab/classroom computers every semester',
+      'Managed, trained, and empowered students to do a high level of work'
+
+    ]
   }
 ];
