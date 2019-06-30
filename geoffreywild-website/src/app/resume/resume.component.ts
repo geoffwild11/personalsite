@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { JobInfo } from '../job/job-info';
-import { JOBS } from './jobs';
+import { JOBS } from '../../data/jobs';
+import { IJobInfo } from '../job/job.models';
+import { IEducationInfo } from '../education/education.models';
+import { EDUCATION } from 'src/data/education';
 
 @Component({
   selector: 'app-resume',
@@ -10,9 +12,15 @@ import { JOBS } from './jobs';
 })
 export class ResumeComponent implements OnInit {
 
-  public jobs = JOBS;
+  public jobs: IJobInfo[] = JOBS;
+  public education: IEducationInfo[] = EDUCATION;
+  public isWorkSectionCollapsed: boolean;
+  public isEducationSectionCollapsed: boolean;
 
-  constructor() { }
+  constructor() {
+    this.isWorkSectionCollapsed = true;
+    this.isEducationSectionCollapsed = true;
+  }
 
   ngOnInit() {
   }

@@ -1,3 +1,15 @@
-<h2>Work Experience</h2>
-<app-job *ngFor="let job of jobs" [jobModel]="job">
-</app-job>
+<div>
+  <div class="expandButton" (click)="isWorkSectionCollapsed = !isWorkSectionCollapsed">Work Experience</div>
+  <div class="collapsibleSection" *ngIf="!isWorkSectionCollapsed">
+    <app-job *ngFor="let job of jobs" [jobModel]="job">
+    </app-job>
+  </div>
+</div>
+
+<div>
+  <div class="expandButton" (click)="isEducationSectionCollapsed = !isEducationSectionCollapsed">Education</div>
+  <div class="collapsibleSection" *ngIf="!isEducationSectionCollapsed">
+    <app-education *ngFor="let eduEntry of education" [educationModel]="eduEntry">
+    </app-education>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.expandButton {
+  background-color: rgb(127, 139, 139);
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: inline-block;
+  // white-space: nowrap;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: beige;
+}
+
+.collapsibleSection {
+  border-radius: 4px;
+  background-color: rgb(250, 250, 250);
+}
