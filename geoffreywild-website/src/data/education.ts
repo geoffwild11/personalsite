@@ -9,7 +9,11 @@ export const EDUCATION: IEducationInfo[] = [
       dateEnd: new Date(2010, 4),
       dateStart: new Date(2006, 7),
       location: 'De Pere, WI',
-      infoList: []
+      infoList: [
+        'Computer Science teaching assistant from Feb 2008 - Dec 2009',
+        'Drawing program senior project aimed at elementary-aged children',
+        'Modify existing robot code to have robot follow someone rather than avoid objects'
+      ]
     }
   },
   {
@@ -18,7 +22,10 @@ export const EDUCATION: IEducationInfo[] = [
       dateEnd: new Date(2006, 4),
       dateStart: new Date(2002, 7),
       location: 'Streamwood, IL',
-      infoList: []
+      infoList: [
+        'Athletic Training Student Aide for 2 years',
+        'First place in Athletic Training Health Occupation Students of America competition'
+      ]
     }
   }
 ];
