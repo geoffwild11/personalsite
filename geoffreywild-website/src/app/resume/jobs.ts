@@ -11,11 +11,12 @@ export const JOBS: IJobInfo[] = [
         'Identify bugs within the system, design a solution to the problem, and implement the design',
         'Prototype and design enhancements that are usable and efficient ',
         'Refactor code to simplify code maintenance and improve readability ',
+        'Work with Windows SDK to make Microsoft Media Foundation work with pulling data from a webcam',
         'Review code for other developers, review designs, and assist customers when necessary',
         'Worked on two company-wide projects with heavy focus on UX',
         'Working with 3rd party systems for scanning documents',
         'Carrying out role as Scrum Master for web migration projects',
-        'Languages: VB6, M, C#, TypeScript, JavaScript, ASP.NET'
+        'Languages: C#, TypeScript, JavaScript, ASP.NET, VB6, M (MUMPS)'
       ]
     }
   },

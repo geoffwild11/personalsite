@@ -1,4 +1,4 @@
-export interface IResumeInfo {
+export interface IResumeEntryInfo {
   dateEnd?: Date;
   dateStart: Date;
   location: string;

@@ -1,6 +1,10 @@
 <div class="job">
   <h3>{{jobModel.position}}</h3>
-  <h4>{{jobModel.employer}} / {{jobModel.resumeInfo.location}} / {{jobModel.resumeInfo.dateStart | date:'MMM yyyy'}}</h4>
+  <h4>
+    {{jobModel.employer}} / {{jobModel.resumeInfo.location}} / {{jobModel.resumeInfo.dateStart | date:'MMM yyyy'}}
+    <span *ngIf="jobModel.resumeInfo.dateEnd">- {{jobModel.resumeInfo.dateEnd | date:'MMM yyyy'}}</span>
+    <span *ngIf="!jobModel.resumeInfo.dateEnd">- Present</span>
+  </h4>
   <ul class="responsibilityList">
     <li *ngFor="let responsibility of jobModel.resumeInfo.infoList">
       {{responsibility}}
