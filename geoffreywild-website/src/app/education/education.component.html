@@ -1,0 +1,9 @@
+<div class="educationEntry">
+  <h3>{{educationModel.institution}}</h3>
+  <div *ngIf="educationModel.degree && educationModel.major" class="collegeEducation">
+    {{educationModel.degree}} / {{educationModel.major}}
+  </div>
+  <div class="institutionInfo">
+    {{educationModel.resumeInfo.location}} / {{educationModel.resumeInfo.dateStart | date:"MMM yyyy"}} - {{educationModel.resumeInfo.dateEnd | date:"MMM yyyy"}}
+  </div>
+</div>

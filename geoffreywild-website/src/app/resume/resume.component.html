@@ -1,3 +1,11 @@
 <h2>Work Experience</h2>
-<app-job *ngFor="let job of jobs" [jobModel]="job">
-</app-job>
+<div class="jobContainer">
+  <app-job *ngFor="let job of jobs" [jobModel]="job">
+  </app-job>
+</div>
+
+<h2>Education</h2>
+<div class="educationContainer">
+  <app-education *ngFor="let eduEntry of education" [educationModel]="eduEntry">
+  </app-education>
+</div>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { JOBS } from './jobs';
+import { JOBS } from '../../data/jobs';
 import { IJobInfo } from '../job/job.models';
+import { IEducationInfo } from '../education/education.models';
+import { EDUCATION } from 'src/data/education';
 
 @Component({
   selector: 'app-resume',
@@ -11,6 +13,7 @@ import { IJobInfo } from '../job/job.models';
 export class ResumeComponent implements OnInit {
 
   public jobs: IJobInfo[] = JOBS;
+  public education: IEducationInfo[] = EDUCATION;
 
   constructor() { }
 

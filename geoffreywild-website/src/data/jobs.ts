@@ -1,4 +1,4 @@
-import { IJobInfo } from '../job/job.models';
+import { IJobInfo } from '../app/job/job.models';
 
 export const JOBS: IJobInfo[] = [
   {
