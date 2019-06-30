@@ -14,8 +14,13 @@ export class ResumeComponent implements OnInit {
 
   public jobs: IJobInfo[] = JOBS;
   public education: IEducationInfo[] = EDUCATION;
+  public isWorkSectionCollapsed: boolean;
+  public isEducationSectionCollapsed: boolean;
 
-  constructor() { }
+  constructor() {
+    this.isWorkSectionCollapsed = true;
+    this.isEducationSectionCollapsed = true;
+  }
 
   ngOnInit() {
   }
