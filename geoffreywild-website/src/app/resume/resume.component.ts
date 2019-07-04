@@ -20,6 +20,8 @@ export class ResumeComponent implements OnInit {
   public isEducationSectionCollapsed: boolean;
   public toggleText: string;
 
+  public ResumeSectionType: typeof ResumeSectionType = ResumeSectionType;
+
   private readonly ExpandAllText: string = 'Expand all';
   private readonly CollapseAllText: string = 'Collapse all';
 
