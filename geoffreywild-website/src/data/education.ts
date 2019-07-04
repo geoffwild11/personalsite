@@ -1,3 +1,5 @@
+// Education Info "database"
+
 import { IEducationInfo } from 'src/app/education/education.models';
 
 export const EDUCATION: IEducationInfo[] = [

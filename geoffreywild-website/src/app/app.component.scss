@@ -1,22 +1,22 @@
+@import '../assets/styles/_variables';
+
 /* App component */
-* {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+nav {
+  a {
+    padding: 0.25rem .75rem;
+    text-decoration: none;
+    margin: .5rem;
+    display: inline-block;
+    background-color: $base-darker;
+    border-radius: 4px;
+  }
 
-h1 {
-  color: rgb(5, 121, 105);
-  font-size: 250%;
-}
+  a:visited, a:link {
+    color: $color-black;
+  }
 
-h2 {
-  color: rgb(44, 44, 44);
-  font-weight: lighter;
-}
-
-body {
-  margin: 2em;
-}
-
-a {
-  text-decoration: none;
+  a:hover {
+    color: $color-white;
+    text-decoration: underline;
+  }
 }
