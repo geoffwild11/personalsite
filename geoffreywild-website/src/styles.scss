@@ -1,6 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1, h2, h3, h4 {
   margin: 0.3rem;
+}
+
+h1 {
+  color: rgb(5, 121, 105);
+  font-size: 250%;
+}
+
+h2 {
+  color: rgb(44, 44, 44);
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul{
