@@ -4,8 +4,11 @@ import { IJobInfo } from './job.models';
 @Component({
   selector: 'app-job',
   templateUrl: './job.component.html',
-  styleUrls: ['./job.component.scss']
 })
+
+/**
+ * @summary Contains all information for jobs for a resume
+ */
 export class JobComponent implements OnInit {
   @Input() public jobModel: IJobInfo;
   constructor() { }
