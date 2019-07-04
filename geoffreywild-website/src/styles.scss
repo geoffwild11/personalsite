@@ -17,8 +17,17 @@ h2, h3, h4 {
   color: $header-color-lighter;
 }
 
+/* Link styling */
 a {
+  font-weight: bold;
   text-decoration: none;
+  color: $link-color;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: $link-color-hover;
 }
 
 ul{
