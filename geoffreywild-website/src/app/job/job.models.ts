@@ -1,4 +1,5 @@
 import { IResumeEntryInfo } from '../resume/resume.models';
+
 /**
  * @summary Contains information about jobs
  */
