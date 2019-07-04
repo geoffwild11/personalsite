@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/_variables';
+
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -8,13 +9,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  color: rgb(5, 121, 105);
+  color: $header-color;
   font-size: 250%;
 }
 
-h2 {
-  color: rgb(44, 44, 44);
-  font-weight: lighter;
+h2, h3, h4 {
+  color: $header-color-lighter;
 }
 
 a {
@@ -26,5 +26,5 @@ ul{
 }
 
 body {
-  background-color: rgb(208, 229, 210);
+  background-color: $base-color;
 }

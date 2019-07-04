@@ -26,9 +26,9 @@ export class ResumeComponent implements OnInit {
   private readonly CollapseAllText: string = 'Collapse all';
 
   constructor() {
-    this.isWorkSectionCollapsed = true;
-    this.isEducationSectionCollapsed = true;
-    this.toggleText = this.ExpandAllText;
+    this.isWorkSectionCollapsed = false;
+    this.isEducationSectionCollapsed = false;
+    this.__updateToggleText();
   }
 
   ngOnInit() {

@@ -1,0 +1,15 @@
+// Colors
+// General
+$color-black: #202020;
+$color-white: #f0f0f0;
+$base-color: #c8e1d8;
+$base-darker: darken($base-color, 20%);
+$base-lighter: lighten($base-color, 10%);
+
+// Header
+$header-color: darken($base-color, 60%);
+$header-color-lighter: lighten($header-color, 10%);
+
+// Buttons
+$button-color: #d3d3d3;
+$button-text: invert($button-color);
