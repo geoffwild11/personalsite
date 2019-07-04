@@ -1,5 +1,9 @@
 <div>
-  <div class="expandButton" (click)="isWorkSectionCollapsed = !isWorkSectionCollapsed">Work Experience</div>
+  <div class="expandButton" (click)="toggleAllSections()">{{toggleText}}</div>
+</div>
+
+<div>
+  <div class="expandButton" (click)="toggleResumeSection(1)">Work Experience</div>
   <div class="collapsibleSection" *ngIf="!isWorkSectionCollapsed">
     <app-job *ngFor="let job of jobs" [jobModel]="job">
     </app-job>
@@ -7,7 +11,7 @@
 </div>
 
 <div>
-  <div class="expandButton" (click)="isEducationSectionCollapsed = !isEducationSectionCollapsed">Education</div>
+  <div class="expandButton" (click)="toggleResumeSection(2)">Education</div>
   <div class="collapsibleSection" *ngIf="!isEducationSectionCollapsed">
     <app-education *ngFor="let eduEntry of education" [educationModel]="eduEntry">
     </app-education>

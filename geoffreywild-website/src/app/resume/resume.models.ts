@@ -4,3 +4,8 @@ export interface IResumeEntryInfo {
   location: string;
   infoList?: string[];
 }
+
+export enum ResumeSectionType {
+  work = 1,
+  education = 2
+}
