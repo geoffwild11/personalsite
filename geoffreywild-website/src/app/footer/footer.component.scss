@@ -15,4 +15,11 @@ footer {
       color: $link-color;
     }
   }
+
+  .socialMediaContainer {
+    div div {
+      padding: .25rem .25rem;
+      display: inline;
+    }
+  }
 }
