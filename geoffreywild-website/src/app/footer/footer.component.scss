@@ -1,0 +1,25 @@
+@import '../../assets/styles/_variables';
+
+footer {
+  background-color: $base-darker;
+  margin: 0px;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: .85rem;
+
+  a {
+    font-weight: normal;
+    color: $link-color;
+
+    :hover {
+      color: $link-color;
+    }
+  }
+
+  .socialMediaContainer {
+    div div {
+      padding: .25rem .25rem;
+      display: inline;
+    }
+  }
+}

@@ -13,3 +13,7 @@ $header-color-lighter: lighten($header-color, 10%);
 // Buttons
 $button-color: #d3efdf;
 $button-text: invert($button-color);
+
+// Links
+$link-color: darken($base-color, 50%);
+$link-color-hover: lighten($link-color, 25%);
