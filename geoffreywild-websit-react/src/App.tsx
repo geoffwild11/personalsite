@@ -1,20 +1,23 @@
 import React from 'react';
+import { HashRouter, NavLink, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/Home';
+import Resume from './components/Resume';
 
 function App() {
   return (
-    <div>
+    <HashRouter>
       <div id="header">
         <h1>Geoffrey Wild</h1>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Resume</a>
+          <NavLink exact to="/">Home</NavLink>
+          <NavLink to="/resume">Resume</NavLink>
         </nav>
       </div>
-      <Home />
-    </div>
+      <Route exact path="/" component={Home}/>
+      <Route path="/resume" component={Resume}/>
+    </HashRouter>
   );
 }
 
