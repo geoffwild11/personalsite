@@ -1,13 +1,14 @@
 <h3>{{educationModel.institution}}</h3>
 <div class="institutionInfo">
-{{educationModel.resumeInfo.location}} / {{educationModel.resumeInfo.dateStart | date:"MMM yyyy"}} - {{educationModel.resumeInfo.dateEnd | date:"MMM yyyy"}}
+    {{educationModel.resumeInfo.location}} / {{educationModel.resumeInfo.dateStart | date:"MMM yyyy"}} - {{educationModel.resumeInfo.dateEnd | date:"MMM yyyy"}}
 </div>
 <div *ngIf="educationModel.degree && educationModel.major" class="collegeEducation">
-{{educationModel.degree}} / {{educationModel.major}}
+    {{educationModel.degree}} / {{educationModel.major}}
 </div>
 <div class="experienceInfo" *ngIf="educationModel.resumeInfo.infoList">
-<ul>
-  <li *ngFor="let experience of educationModel.resumeInfo.infoList">
-    {{experience}}
-  </li>
-</ul>
+    <ul>
+        <li *ngFor="let experience of educationModel.resumeInfo.infoList">
+            {{experience}}
+        </li>
+    </ul>
+</div>
