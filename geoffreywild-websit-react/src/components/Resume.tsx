@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Job from "./Job";
+import Education from "./Education";
 
 import {EDUCATION} from "../data/education";
 import { JOBS } from "../data/jobs";
 import { IEducationInfo } from "./models/education.models";
 import { IJobInfo } from "./models/job.models";
-import Job from "./Job";
-import Education from "./Education";
 import "./styles/Resume.scss";
 
 const jobs = JOBS;
 const education = EDUCATION;
+
+
 function Resume() {
+    const [workExpanded, setWorkExpanded] = useState(true);
+    const [educationExpanded, setEducationExpanded] = useState(true);
+
     return (<div>
-        <div className="collapsibleSection">
-            <h2>Work Experience</h2>
-            {jobs.map((job: IJobInfo, _: number) => <Job jobInfo={job}/>)}
-        </div>
-        <div style={{height: 20}}/>
-        <div className="collapsibleSection">
-            <h2>Education</h2>
-            {education.map((eduInfo: IEducationInfo, _: number) => <Education educationInfo={eduInfo}/>)}
-        </div>
+        <div className="expandButton" onClick={() => setWorkExpanded(!workExpanded)}>Work Experience</div>
+        {workExpanded ? <div className="collapsibleSection">{jobs.map((job: IJobInfo) => <Job jobInfo={job}/>)}</div> : <div />}
+        <div className="expandButton" onClick={() => setEducationExpanded(!educationExpanded)}>Education</div>
+        {educationExpanded ? <div className="collapsibleSection">{education.map((eduInfo: IEducationInfo) => <Education educationInfo={eduInfo}/>)}</div> : null}
     </div>
     );
 }
