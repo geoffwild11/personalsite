@@ -1,0 +1,51 @@
+@import 'assets/styles/_variables';
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0.3rem;
+}
+
+h1 {
+    color: $header-color;
+    font-size: 250%;
+}
+
+h2,
+h3,
+h4 {
+    color: $header-color-lighter;
+}
+
+
+/* Link styling */
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $link-color;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $link-color-hover;
+}
+
+ul {
+    margin-top: 0.3rem;
+}
+
+body {
+    background-color: $base-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
