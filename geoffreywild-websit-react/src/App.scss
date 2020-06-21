@@ -1,0 +1,22 @@
+@import 'assets/styles/_variables';
+
+/* App component */
+
+nav {
+    a {
+        padding: 0.25rem .75rem;
+        text-decoration: none;
+        margin: .5rem;
+        display: inline-block;
+        background-color: $base-darker;
+        border-radius: 4px;
+    }
+    a:visited,
+    a:link {
+        color: $color-black;
+    }
+    a:hover {
+        color: $color-white;
+        text-decoration: underline;
+    }
+}
