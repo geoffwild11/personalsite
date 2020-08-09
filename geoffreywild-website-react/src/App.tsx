@@ -8,15 +8,17 @@ import Resume from './components/Resume';
 function App() {
   return (
     <HashRouter>
-      <div id="header">
-        <h1>Geoffrey Wild</h1>
-        <nav>
-          <NavLink exact to="/">Home</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
-        </nav>
-      </div>
-      <Route exact path="/" component={Home}/>
-      <Route path="/resume" component={Resume}/>
+      <div id="divMainContent">
+        <div id="header">
+          <h1>Geoffrey Wild</h1>
+          <nav>
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink to="/resume">Resume</NavLink>
+          </nav>
+        </div>
+        <Route exact path="/" component={Home} />
+        <Route path="/resume" component={Resume} />
+    </div>
     </HashRouter>
   );
 }
