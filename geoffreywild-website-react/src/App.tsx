@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/resume" component={Resume} />
         <Route path="/about" component={About} />
+        <footer>Copyright 2019-2020, Geoff Wild</footer>
     </div>
     </HashRouter>
   );

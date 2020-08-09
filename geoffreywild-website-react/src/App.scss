@@ -6,7 +6,7 @@
     background-color: #fffef5;
     max-width: 1000px;
     min-width: 350px;
-    border-radius: 5px;
+    border-radius: $common-border-radius;
     padding: 1.5rem;
     margin: 0 auto;
 }
@@ -28,6 +28,13 @@ nav {
         color: $color-white;
         text-decoration: underline;
     }
+}
+
+footer {
+    font-size: 0.8rem;
+    background-color: $base-color;
+    padding: 0.9rem;
+    border-radius: $common-border-radius;
 }
 
 .noDecorationList {
