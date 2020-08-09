@@ -10,6 +10,7 @@ function App() {
   return (
     <HashRouter>
       <div id="divMainContent">
+        <div className="innerContent">
         <div id="header">
           <h1>Geoffrey Wild</h1>
           <nav>
@@ -21,7 +22,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/resume" component={Resume} />
         <Route path="/about" component={About} />
-        <footer>Copyright 2019-2020, Geoff Wild</footer>
+      </div>
+      <footer>Copyright 2019-2020, Geoff Wild</footer>
     </div>
     </HashRouter>
   );
