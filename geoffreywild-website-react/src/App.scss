@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.innerContent {
+    min-height: calc(95vh - 70px);
+}
+
 nav {
     a {
         padding: 0.25rem .75rem;
