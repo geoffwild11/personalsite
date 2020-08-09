@@ -3,7 +3,7 @@
 /* App component */
 
 #divMainContent {
-    background-color: whitesmoke;
+    background-color: #fffef5;
     max-width: 1000px;
     min-width: 350px;
     border-radius: 5px;
@@ -28,4 +28,9 @@ nav {
         color: $color-white;
         text-decoration: underline;
     }
+}
+
+.noDecorationList {
+    list-style-type: none;
+    padding-left: 0.5rem;
 }
