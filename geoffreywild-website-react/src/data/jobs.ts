@@ -1,11 +1,49 @@
 import { IJobInfo } from '../components/models/job.models';
 
 export const JOBS: IJobInfo[] = [
+	{
+		employer: 'Yahara Software'
+		position: 'Interim Technical Lead'
+		resumeInfo: {
+			dateStart: new Date(2021, 8),
+			location: 'Middleton, WI (Remote)',
+			infoList: [
+				"Implement TypeScript for new development on older client project",
+				"Manage 2 developers on different projects",
+				"Work with clients to develop solutions to meet their business needs,",	
+				"Architect solutions that balance speed of development with maintainability",
+				"Conduct code reviews on pull requests",
+				"Assist developers with questions they have on stories and design decisions",
+				"Mentor developers to help them be successful",
+				"Maintain customer’s Azure App Service to ensure their environments run smoothly",
+				"Update deployment scripts to include unit tests in CI/CD pipeline",
+				"Introduce unit testing infrastructure (xUnit) to the project",
+				"Perform technical refinement on stories submitted to the development team",
+				"Maintain and expand Azure functions utilized for nightly tasks",
+				"Create and collaborate on development Standard Operating Procedures",
+			]
+		}
+	},
+	{
+		employer: 'Yahara Software'
+		position: 'Application Developer'
+		resumeInfo: {
+			dateStart: new Date(2020, 9),
+			dateEnd: new Date(2021, 8),
+			location: 'Middleton, WI (Remote)',
+			infoList: [
+				"Created reusable controls for frontend solutions",
+				"Developed full stack solutions utilizing C#, SQL, TypeScript/JavaScript, CSS, and additional libraries for UI",
+				"Created Azure Function to track outage messages from Azure to Slack",
+			]
+		}
+	},
   {
     employer: 'Epic Systems',
     position: 'Software Developer',
     resumeInfo: {
       dateStart: new Date(2015, 10),
+	  dateEnd: new Date(2020, 9),
       location: 'Verona, WI',
       infoList: [
         'Identify bugs within the system, design a solution to the problem, and implement the design',
