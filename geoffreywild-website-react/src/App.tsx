@@ -23,7 +23,7 @@ function App() {
         <Route path="/resume" component={Resume} />
         <Route path="/about" component={About} />
       </div>
-      <footer>Copyright 2019-2020, Geoff Wild</footer>
+      <footer>Copyright 2019-2022, Geoff Wild</footer>
     </div>
     </HashRouter>
   );
