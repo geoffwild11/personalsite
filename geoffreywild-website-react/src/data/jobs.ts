@@ -2,8 +2,8 @@ import { IJobInfo } from '../components/models/job.models';
 
 export const JOBS: IJobInfo[] = [
 	{
-		employer: 'Yahara Software'
-		position: 'Interim Technical Lead'
+		employer: 'Yahara Software',
+		position: 'Interim Technical Lead',
 		resumeInfo: {
 			dateStart: new Date(2021, 8),
 			location: 'Middleton, WI (Remote)',
@@ -25,8 +25,8 @@ export const JOBS: IJobInfo[] = [
 		}
 	},
 	{
-		employer: 'Yahara Software'
-		position: 'Application Developer'
+		employer: 'Yahara Software',
+		position: 'Application Developer',
 		resumeInfo: {
 			dateStart: new Date(2020, 9),
 			dateEnd: new Date(2021, 8),
